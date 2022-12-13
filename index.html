@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- BootStrap CSS Files -->
+    <link rel="stylesheet" href="./BootStrap/animate.css">
+    <link rel="stylesheet" href="./BootStrap/CSS/font-awesome.css">
+    <link rel="stylesheet" href="./BootStrap/CSS/bootstrap.css">
+    <link rel="stylesheet" href="./BootStrap/CSS/mdb.css">
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Sorting Visualizer</title>
+
+</head>
+<body>
+
+    <div class="navbar">
+        <button class="btn btn-primary mx-1" id="new-array-btn">Generate New Array</button>
+        <div class="form-group mt-4">
+            <label for="array-size" class="form-label text-white">Array Size</label>
+            <input type="range" class="form-range" min="10" max="80" step="10" value="10" id="array-size">
+        </div>
+        <div class="form-group mt-4">
+            <label for="speed" class="form-label text-white">Speed</label>
+            <input type="range" class="form-range" min="1" max="21" step="5" value="1" id="speed">
+        </div>
+        <div id="buttons">
+            <button class="btn btn-warning mx-3" id="merge-sort-btn">Merge Sort</button>
+            <button class="btn btn-danger mx-3" id="quick-sort-btn">Quick Sort</button>
+            <button class="btn btn-success mx-3" id="selection-sort-btn">Selection Sort</button>
+            <button class="btn btn-secondary mx-3" id="bubble-sort-btn">Bubble Sort</button>
+        </div>
+    </div>
+    <!-- Bars -->
+    <div class="container mt-2 " id="bars">
+
+    </div>
+
+
+<!-- BootStrap JS Files -->
+<script src="./BootStrap/JS/jquery-3.3.1.min.js"></script>
+<script src="./BootStrap/JS/popper.min.js"></script>
+<script src="./BootStrap/JS/bootstrap.js"></script>
+<script src="./BootStrap/JS/mdb.js"></script>
+
+<!-- JS Application File-->
+    <script src="app.js"></script>
+    <script src="./js/QuickSort.js"></script>
+    <script src="./js/SelectionSort.js"></script>
+    <script src="./js/MergeSort.js"></script>
+    <script src="./js/BubbleSort.js"></script>
+</body>
+</html>
+
+
